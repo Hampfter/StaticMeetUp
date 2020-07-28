@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'Fred';
+  async ngOnInit(): Promise<void> {
+    // const { name } = await (await fetch(`/api/name`)).json();
+    // this.name = name;
+  }
 }
